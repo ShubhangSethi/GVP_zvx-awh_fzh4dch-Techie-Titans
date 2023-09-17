@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Example</title>
+</head>
+<body>
+    <div id="chat">
+        <div id="chat-history">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <input type="text" id="user-input" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        const responses = {
+            "hello": "Hello! How can I assist you today?",
+            "how are you": "I'm just a chatbot, but thanks for asking!",
+            "goodbye": "Goodbye! Feel free to return anytime.",
+            // Add more responses based on user input
+            // For example: "help": "Sure, I can help you with that. What do you need assistance with?"
+        };
+
+        function sendMessage() {
+            const userInput = document.getElementById("user-input").value.toLowerCase();
+            const chatHistory = document.getElementById("chat-history");
+
+            // Display user's message
+            const userMessage = document.createElement("div");
+            userMessage.className = "user-message";
+            userMessage.textContent = "You: " + userInput;
+            chatHistory.appendChild(userMessage);
+
+            // Get and display chatbot's response
+            const chatbotResponse = responses[userInput] || "I'm not sure how to respond to that.";
+            const chatbotMessage = document.createElement("div");
+            chatbotMessage.className = "chatbot-message";
+            chatbotMessage.textContent = "Chatbot: " + chatbotResponse;
+            chatHistory.appendChild(chatbotMessage);
+
+            // Clear user input field
+            document.getElementById("user-input").value = "";
+        }
+    </script>
+</body>
+</html>
