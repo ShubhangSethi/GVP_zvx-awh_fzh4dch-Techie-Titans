@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=¨stylesheet¨ type=¨text/css¨ href=¨[creditpts].css¨>
+    <title>E-Waste Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>E-Waste Management</h1>
+    </header>
+    <main>
+        <section class="ewaste-disposal">
+            <h2>Dispose E-Waste</h2>
+            <p>Enter the weight of e-waste (in kg):</p>
+            <input type="number" id="ewasteWeight" step="0.01">
+            <button onclick="disposeEwaste()">Dispose E-Waste</button>
+            <p id="creditPoints">Credit Points: 0</p>
+        </section>
+        <section class="coupon-redeem">
+            <h2>Redeem Coupon</h2>
+            <button onclick="redeemCoupon()">Redeem Coupon</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 E-Waste Management</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="creditpts.js"></script>
+</body>
+</html>
