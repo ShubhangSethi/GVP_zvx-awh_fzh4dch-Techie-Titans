@@ -1,0 +1,128 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.hero-card-section .card-main-heading-section {
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+}
+
+.hero-card-section .card-main-heading-section .card-main-heading {
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.hero-card-section .card-main-heading-section .block-badge {
+  padding: 3px 10px;
+  max-width: 2.1875rem;
+  border-radius: 12px;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1.5625rem;
+  background-image: linear-gradient(90deg, #e64c4c 0%, #ef32fb 100%);
+  font-size: 13px;
+  color: #000;
+  letter-spacing: 0.26px;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hero-card-section .card-title {
+  font-weight: 700;
+}
+
+section.hero-card-section .row > .hero-card-container:nth-child(1) .card {
+  background-image: linear-gradient(153deg, #e64c4c 0%, #ef32fb 95%);
+  box-shadow: 0 3px 15px 0 rgba(231, 74, 89, 0.4);
+}
+
+section.hero-card-section .row > .hero-card-container:nth-child(2) .card {
+  background-image: linear-gradient(153deg, #ef33f2 0%, #3544dc 95%);
+  box-shadow: 0 3px 15px 0 rgba(92, 64, 224, 0.5);
+}
+
+section.hero-card-section .row > .hero-card-container:nth-child(3) .card {
+  background-image: linear-gradient(153deg, #8adc32 0%, #25c7a2 95%);
+  box-shadow: 0 3px 15px 0 rgba(59, 203, 137, 0.4);
+}
+
+section.hero-card-section .row > .hero-card-container > .card {
+  position: relative;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 25px 15px;
+  max-width: 320px;
+  margin: auto;
+}
+
+section.hero-card-section .row > .hero-card-container > .card::after {
+  position: absolute;
+  content: "";
+  right: -1rem;
+  bottom: -1rem;
+  left: 1rem;
+  top: 1rem;
+  border-radius: 15px;
+  z-index: -1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.hero-card-section
+  .row
+  > .hero-card-container:nth-child(1)
+  > .card::after {
+  background: rgba(237, 23, 251, 0.2);
+}
+
+section.hero-card-section
+  .row
+  > .hero-card-container:nth-child(2)
+  > .card::after {
+  background: rgba(92, 64, 224, 0.2);
+}
+
+section.hero-card-section
+  .row
+  > .hero-card-container:nth-child(3)
+  > .card::after {
+  background: rgba(59, 203, 137, 0.2);
+}
+
+section.hero-card-section .row > .hero-card-container > .card:hover::after,
+section.hero-card-section .row > .hero-card-container > .card:focus::after,
+section.hero-card-section .row > .hero-card-container > .card:active::after {
+  left: -1rem;
+  right: -1rem;
+  top: -1rem;
+  bottom: -3rem;
+}
+
+section.hero-card-section .row > .hero-card-container > .card .btn-card {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  padding: 15px 0px;
+  text-decoration: none;
+}
+
+section.hero-card-section .row > .hero-card-container > .card .btn-card > i {
+  font-size: 16px;
+  padding-left: 5px;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+section.hero-card-section .row > .hero-card-container > .card:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+section.hero-card-section .row > .hero-card-container > .card:hover i {
+  padding-left: 10px;
+}
+
+
