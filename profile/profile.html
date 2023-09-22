@@ -28,5 +28,131 @@
     </div>
   </div>
   <script src="script.js"></script>
+  
+
+
+  <div id="wallet-container">
+    <h1>Your Credits Wallet</h1>
+    <div id="credits-info">
+        <p id="lifetime-credits">Lifetime Credits: <span>0</span></p>
+        <p id="redeemed-credits">Credits Redeemed: <span>0</span></p>
+        <p id="available-credits">Available Credits: <span>0</span></p>
+    </div>
+    <div id="credits-history">
+        <h2>Credits History</h2>
+        <table id="history-table">
+            <tr>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Type</th>
+            </tr>
+        </table>
+    </div>
+    <div id="credits-chart" class="chart"></div>
+</div>
+<script src="scripts.js"></script>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('/get_credits_info')
+        .then(response => response.json())
+        .then(data => {
+            document.querySelector('#lifetime-credits span').textContent = data.lifetime;
+            document.querySelector('#redeemed-credits span').textContent = data.redeemed;
+            document.querySelector('#available-credits span').textContent = data.available;
+
+            const historyTable = document.querySelector('#history-table');
+            data.history.forEach(item => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td>${item.date}</td><td>${item.amount}</td><td>${item.type}</td>`;
+                historyTable.appendChild(tr);
+            });
+
+            const chart = document.querySelector('#credits-chart');
+            const earnedBar = document.createElement('div');
+            earnedBar.style.width = `${data.lifetime}px`;
+            earnedBar.textContent = `Earned: ${data.lifetime}`;
+            chart.appendChild(earnedBar);
+
+            const redeemedBar = document.createElement('div');
+            redeemedBar.style.width = `${data.redeemed}px`;
+            redeemedBar.textContent = `Redeemed: ${data.redeemed}`;
+            chart.appendChild(redeemedBar);});
+});
+
+</script>
+
 </body>
+
+<style>
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#wallet-container {
+    width: 60%;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+#credits-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#credits-info p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+#credits-history {
+    margin-top: 20px;
+}
+
+#history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#history-table th, #history-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#history-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.chart {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.chart div {
+    position: absolute;
+    bottom: 0;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 200px;
+   color:white;
+}
+
+</style>
 </html>
