@@ -1,250 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="We are the first year students of Ramaiah Institute of Technology">
-    <meta name="author" content="Techie Titans Team">
-    <meta name="keywords" content="Best Chatbot Builder, JavaScript Chatbot, Open Source Chatbot, free chatbot,chatbot web application,bootstrap chatbot">
-    <meta name="google-site-verification" content="56AmmQvuVXODUeE3Lm0507LO4G8ZgZD2p-uCyAZtt4Q" />
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-    <meta property="og:site_name" content="official site of Techie Titans" />
-    <!-- website name -->
-    <meta property="og:site" content="Techie Titans.io.in" />
-    <!-- website link -->
-    <meta property="og:title" content="Techie Titans Team Presents" />
-    <!-- title shown in the actual shared post -->
-    <meta property="og:description" content="E-Waste Manager a open source website which will connect the user to the disposal centres." />
-    <!-- description shown in the actual shared post -->
-    <meta property="og:image" content="Techie Titans" />
-    <!-- image link, make sure it's jpg -->
-    <meta property="og:url" content="" />
-    <!-- where do you want your post to link to -->
-    <meta name="twitter:card" content="summary_large_image">
-    <!-- to have large image post format in Twitter -->
-
-    <!-- Webpage Title -->
-    <title>Login - E-Waste Manager</title>
-
-    <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/fontawesome-all.min.css" rel="stylesheet">
-    <link href="css/style1.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-
-    <!-- Favicon  -->
-    <link rel="icon" href="images/chatbot-logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
 </head>
-
 <body>
-
-    <!-- Navigation -->
-    <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
-        <div class="container">
-
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/chatbot-logo.png" alt="alternative" style="width: 40px;"> E-Waste Manager</a>
-
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text" href="index.html">Ioniq</a> -->
-
-            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ms-auto navbar-nav-scroll">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#features">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#details">Details</a>
-                    </li>
-                    <li class="nav-item d-none">
-                        <a class="nav-link" href="index.html#pricing">Pricing</a>
-                    </li>
-
-                </ul>
-                <span class="nav-item">
-                        <a class="btn-outline-sm" href="#">Log in</a>
-                    </span>
+    
+    <div class="form">
+        <form class="form-horizontal signin">
+            <div class="form-wrap" style="position: relative;">
+              <h2>Login</h2>
+              <div class="form-group">
+                  <!-- <label for="email">Username:</label> -->
+                  <div class="relative">
+                      <input class="form-control" id="name" type="text" required="" autofocus="" title="" autocomplete="" placeholder="Username">
+                      <i class="fa fa-user"></i>
+                  </div>
+              </div>
+              
+              <div class="form-group">
+                  <!-- <label for="email">Password:</label> -->
+                  <div class="relative">
+                      <input class="form-control" type="password" required="" placeholder="Password">
+                      <i class="fa fa-key"></i>
+                  </div>
+                  <span class="pull-right"><small><a href="#">Forgot Password?</a></small></span>
+              </div> 
+                              
+              <div class="login-btn">
+                  <a href="./profile/profile.html">Login <i class="fa fa-fw fa-lock"></i></a>
+                  <div class="relative"><hr><span class="login-text">or login with</span></div>
+                  <div class="clearfix"></div>
+                  <div class="social-btn clearfix">
+                      <a href="#"><button class="movebtn google" type="Submit">Google <i class="fa fa-fw fa-google"></i></button></a>
+                      <a href="#"><button class="movebtn facebook" type="Submit">Facebook <i class="fa fa-fw fa-facebook"></i></button></a>
+                  </div>
+              </div>
+              
             </div>
-            <!-- end of navbar-collapse -->
-        </div>
-        <!-- end of container -->
-    </nav>
-    <!-- end of navbar -->
-    <!-- end of navigation -->
-
-
-    <!-- Header -->
-    <header class="ex-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-10 offset-xl-1">
-                    <h1 class="text-center">Log In</h1>
-                </div>
-                <!-- end of col -->
-            </div>
-            <!-- end of row -->
-        </div>
-        <!-- end of container -->
-    </header>
-    <!-- end of ex-header -->
-    <!-- end of header -->
-
-
-    <!-- Basic -->
-    <div class="ex-form-1 pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 offset-xl-3">
-                    <div class="text-box mt-5 mb-5">
-                        <p class="mb-4">You don't have a password? Then please <a class="blue" href="sign-up.html">Sign Up</a></p>
-
-                        <!-- Log In Form -->
-                        <form action="./php/login.php" method="POST">
-                            <div class="mb-4 form-floating">
-                                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput">Email address</label>
-                            </div>
-                            <div class="mb-4 form-floating">
-                                <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
-                                <label for="floatingPassword">Password</label>
-                            </div>
-                            <div class="mb-4 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">I agree with the site's stated <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms & Conditions</a></label>
-                            </div>
-                            <button type="submit" class="form-control-submit-button"><a href="./profile/profile.html"></a>Log In</button>
-                        </form>
-                        <!-- end of log in form -->
-
-                    </div>
-                    <!-- end of text-box -->
-                </div>
-                <!-- end of col -->
-            </div>
-            <!-- end of row -->
-        </div>
-        <!-- end of container -->
+            <div class="sign-up">
+              <a href="./sign-up.html" class="signbtn"><small>Not a member? Sign Up <i>(Click me)</i></small></a>
+          </div>
+        </form>
     </div>
-    <!-- end of ex-basic-1 -->
-    <!-- end of basic -->
-
-
-    <!-- Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-col first">
-                        <h6>About Website</h6>
-                        <p class="p-small">We are team Techie Titans. This is the part of internal Smart India Hackathon. We are a team of 6 members for Ramaiah Institue of Technology.
-                            <p style="color: white;">This website is created by <NAME>. This project was made as a part of the Internal Smart India Hackathon.
-                            
-                        </p>
-                    </div>
-                    <!-- end of footer-col -->
-                    <div class="footer-col second">
-                        <h6>Links</h6>
-                        <ul class="list-unstyled li-space-lg p-small">
-                            <li>Important: <a href="terms.html">Terms & Conditions</a></li>
-                            <li>Important: <a href="privacy.html">Privacy Policy</a></li>
-                            <li>Menu: <a href="#header">Home</a>, <a href="#features">Features</a>, <a href="#details">Details</a>, <a href="#pricing">Pricing</a></li>
-                        </ul>
-                    </div>
-                    <!-- end of footer-col -->
-                    <div class="footer-col third">
-                        <span class="fa-stack">
-                                <a href="#">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        <span class="fa-stack">
-                                <a href="#">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-
-                        <span class="fa-stack">
-                                <a href="https://github.com/Rutikab12/Chatbot-Web-Application">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-github fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        <p class="p-small">Mail us at <a href="vkabhishek04@gmail.co m"><strong>vkabhishek04@gmail.com</strong></a></p>
-                    </div>
-                    <!-- end of footer-col -->
-                </div>
-                <!-- end of col -->
-            </div>
-            <!-- end of row -->
-        </div>
-        <!-- end of container -->
-    </div>
-    <!-- end of footer -->
-    <!-- end of footer -->
-
-
-    <!-- Copyright -->
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a href="#your-link">Techie Titans</a></p>
-                </div>
-                <!-- end of col -->
-            </div>
-            <!-- enf of row -->
-        </div>
-        <!-- end of container -->
-    </div>
-    <!-- end of copyright -->
-    <!-- end of copyright -->
-
-
-    <!-- Back To Top Button -->
-    <button onclick="topFunction()" id="myBtn">
-            <img src="images/up-arrow.png" alt="alternative">
-        </button>
-    <!-- end of back to top button -->
-
-    <!-- Scripts -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Bootstrap framework -->
-    <script src="js/swiper.min.js"></script>
-    <!-- Swiper for image and text sliders -->
-    <script src="js/purecounter.min.js"></script>
-    <!-- Purecounter counter for statistics numbers -->
-    <script src="js/replaceme.min.js"></script>
-    <!-- ReplaceMe for rotating text -->
-    <script src="js/scripts.js"></script>
-    <!-- Custom scripts -->
-    <script src="src/flowchat.js"></script>
-    <script src="src/flowchatui.js"></script>
     <script>
-        $(function() {
+        		$(".signup").css("display", "none");
 
-            // Also try "demo-data/simple-data.json"
+$(".signbtn").click(function(){
+    $("form").animate({ height:"toggle", opacity: "toggle"}, "slow");
+});
 
-            $.getJSON("demo-data/data.json", function(dataJSON) {
-                $('#flowchat').flowchat({
-                    dataJSON: dataJSON,
-                    autoStart: false
-                });
-            });
-        });
+$("#showhide").click(function(){
+var pass = $("#myinput");
+if (pass.attr("type") == "password") {
+pass.attr("type", "text");
+} else {
+pass.attr("type", "password");
+}
+})
     </script>
 </body>
 
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+html{
+    height: 100%;
+}
+body {
+    background: #151515;  /* fallback for old browsers */
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f8f8;
+    background-size: 20px 20px;
+    font-size: 14px;
+    background: rgba(63,60,79,1);
+    background: -moz-linear-gradient(top, rgba(63,60,79,1) 0%, rgba(60,59,77,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(63,60,79,1)), color-stop(100%, rgba(60,59,77,1)));
+    background: -webkit-linear-gradient(top, rgba(63,60,79,1) 0%, rgba(60,59,77,1) 100%);
+    background: -o-linear-gradient(top, rgba(63,60,79,1) 0%, rgba(60,59,77,1) 100%);
+    background: -ms-linear-gradient(top, rgba(63,60,79,1) 0%, rgba(60,59,77,1) 100%);
+    background: linear-gradient(to bottom, rgba(63,60,79,1) 0%, rgba(60,59,77,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3c4f', endColorstr='#3c3b4d', GradientType=0 );
+}
+a{
+    color: #3c3b4d;
+}
+a:hover{
+    text-decoration: none;
+}
+.form {
+    max-width: calc(100vw - 40px);
+    width: 420px;
+    height: auto;
+    background: rgba(255, 255, 255, 1);
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.form:before{
+    content: "";
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.form h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    color: #1e439b;
+    font-size: 22px;
+    border-bottom: 3px solid #ff5501;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+}
+label{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+input {
+    width: 60%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #bebed2;
+}
+.form p:before {
+    content: attr(type);
+    display: block;
+    margin: 10px 0 0;
+    font-size: 13px;
+    color: #5a5a5a;
+    float: left;
+    width: 40%;
+}
+button {
+    padding: 8px 12px;
+    margin: 4px 0;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all .3s;
+}
+button:hover {
+    background: #646171;
+    color: #fff;
+    border-color: #646171;
+    box-shadow: 0px 0 5px 0 #646171;
+}
+.login-btn{margin-top: 50px;}
+
+.relative{
+    position: relative;
+}
+.relative i.fa{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 30px;
+    color: #9b9aa3;
+    text-align: center;
+    border-radius: 0 4px 4px 0;
+    transition: all 0.15s ease-in-out;
+}
+input:focus + .fa{
+    color: #3e3b4e;
+    transform: rotate(360deg);
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.form-control{
+    font-size: 14px;
+    padding-left: 40px;
+    border: none;
+    border-bottom: 1px solid #3c3b4d;
+    border-radius: 0;
+    background-color: transparent;
+}
+.form-control:focus{
+    border-color: #1e439b;
+    box-shadow: inset 0 0px 0px rgba(0,0,0,.075), 0 3px 4px -3px rgb(30, 102, 195);
+    background-color: transparent;
+}
+.sign-up{
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+    margin-bottom: -15px;
+}
+.login-text{
+    position: absolute;
+    top: -11px;
+    text-align: center;
+    width: 30%;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+hr{
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+/* --- Animated Buttons --- */
+.movebtn{
+    background-color: transparent;
+    display:inline-block;
+    width:100%;
+    background-image: none;
+    padding: 8px 10px;
+    border-radius: 0;
+}
+.movebtnre {
+    border: 2px solid #ff5501;
+    box-shadow: inset 0 0 0 0 #ff5501;
+    color:#ff5501;
+}
+.movebtnsu {
+    border: 2px solid #3e3b4e;
+    color: #ffffff;
+    background-color: #3e3b4e;
+}
+.google, .facebook{
+    width: 50%;
+    float: left;
+}
+.google {
+    border: 2px solid #e04c40;
+    color: #ffffff;
+    background-color: #e04c40;
+}
+.facebook {
+    border: 2px solid #2e4da7;
+    color: #ffffff;
+    background-color: #2e4da7;
+}
+.google:focus,
+.google:hover,
+.google:active {
+    background-color: #ea3728;
+    color: #FFF;
+    border-color: #ea3728;
+    box-shadow: none;
+}
+.facebook:focus,
+.facebook:hover,
+.facebook:active {
+    background-color: #1e439b;
+    color: #FFF;
+    border-color: #1e439b;
+    box-shadow: none;
+}
+
+</style>
 </html>
