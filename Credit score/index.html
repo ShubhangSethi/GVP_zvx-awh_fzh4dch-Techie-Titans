@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Credit Score</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>E-Waste Credit Score</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="input-container">
+                <label for="gold">Gold (g):</label>
+                <input type="number" id="gold" step="0.01">
+            </div>
+            <div class="input-container">
+                <label for="copper">Copper (g):</label>
+                <input type="number" id="copper" step="0.01">
+            </div>
+            <div class="input-container">
+                <label for="silver">Silver (g):</label>
+                <input type="number" id="silver" step="0.01">
+            </div>
+            <div class="input-container">
+                <label for="nickel">Nickel (g):</label>
+                <input type="number" id="nickel" step="0.01">
+            </div>
+            <div class="input-container">
+                <label for="palladium">Palladium (g):</label>
+                <input type="number" id="palladium" step="0.01">
+            </div>
+            <button id="calculate-btn">Calculate Credit Score</button>
+        </div>
+        <div class="result-container">
+            <h2>Your Credit Score:</h2>
+            <div id="credit-score">0</div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
