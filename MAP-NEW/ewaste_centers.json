@@ -1,0 +1,36 @@
+[
+    {
+        "name": "E-Waste Recycling Center MSRIT",
+        "lat": 13.03053204779727,
+        "lon": 77.56486291585433
+    },
+    {
+        "name": "E-Waste Recycling Center MAJESTIC-METRO",
+        "lat": 12.976109297152192,
+        "lon": 77.57127480891684
+    },
+    {
+        "name": "E-Waste Recycling Center Delhi-Rail",
+        "lat": 28.63462719445443,
+        "lon": 77.23131616661263
+    },
+    {
+        "name": "E-Waste Recycling Center India-gate",
+        "lat": 28.61301557997795,
+        "lon": 77.22972427209514
+    },
+    
+    {
+        "name": "E-Waste Recycling Center Mysuru Palace",
+        "lat": 12.305362152633005,
+        "lon": 76.65563623486483 
+    },
+    {
+        "name": "E-Waste Recycling Center Coimbatore Yoga",
+        "lat": 11.02674124687701,
+        "lon": 76.99606858196455 
+    }
+    
+]
+ 
+
