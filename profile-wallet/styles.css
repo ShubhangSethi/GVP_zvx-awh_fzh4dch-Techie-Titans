@@ -1,0 +1,132 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f36f6f, #f6c6ea);
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Profile Section Styles */
+.profile {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.profile h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.avatar {
+    font-size: 100px;
+    margin-top: 15px;
+  }
+.profile p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.profile button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #2575fc;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.profile button:hover {
+    background-color: #155a8a;
+}
+
+/* Edit Profile Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Credits Wallet Section Styles */
+.wallet {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.wallet h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.wallet-info p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.wallet-actions button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.wallet-actions button:hover {
+    background-color: #45a049;
+}
