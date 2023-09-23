@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile and Credits Wallet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile">
+            <div class="profile-header">
+                <div class="avatar">
+                    😎
+                </div>
+                <h1 id="username">John Doe</h1>
+                <p>Email: <span id="email">johndoe@example.com</span></p>
+                <p>Phone: <span id="phone">+1234567890</span></p>
+                <button id="edit-profile">Edit Profile</button>
+            </div>
+        </div>
+
+        <!-- Edit Profile Modal -->
+        <div class="modal" id="edit-profile-modal">
+            <div class="modal-content">
+                <span class="close" id="cancel-edit">&times;</span>
+                <h2>Edit Profile</h2>
+                <form id="profile-form">
+                    <label for="new-username">Username:</label>
+                    <input type="text" id="new-username" name="new-username">
+                    <label for="new-email">Email:</label>
+                    <input type="text" id="new-email" name="new-email">
+                    <label for="new-phone">Phone:</label>
+                    <input type="text" id="new-phone" name="new-phone">
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Credits Wallet Section -->
+        <div class="wallet">
+            <h2>Your Credits Wallet</h2>
+            <div class="wallet-info">
+                <p>Lifetime Credits: <span id="lifetime-credits">0</span></p>
+                <p>Credits Redeemed: <span id="redeemed-credits">0</span></p>
+                <p>Available Credits: <span id="available-credits">0</span></p>
+            </div>
+            <div class="wallet-actions">
+                <button id="earn-credits">Earn Credits</button>
+                <button id="redeem-credits">Redeem Credits</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
