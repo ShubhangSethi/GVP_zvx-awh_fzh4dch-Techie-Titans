@@ -29,7 +29,32 @@
         "name": "E-Waste Recycling Center Coimbatore Yoga",
         "lat": 11.02674124687701,
         "lon": 76.99606858196455 
-    }
+    },
+    {
+        "name": "E-Waste Recycling Center Jayanagar",
+        "lat": 12.929866512181883,
+        "lon":  77.58245127622313
+    },
+    {
+        "name": "E-Waste Recycling Center Koramangala",
+        "lat": 12.938231814250521,
+        "lon":  77.62536662004774
+    },
+    {
+        "name": "E-Waste Recycling Center Vajarahalli",
+        "lat":  12.872640336373486,
+        "lon": 77.53884928689732
+    },
+    {
+        "name": "E-Waste Recycling Center Palace",
+        "lat":  12.99678106316864,
+        "lon":77.59137766773864
+    },
+    {
+        "name": "E-Waste Recycling Center Sandal Soap",
+        "lat":  13.014099619959321,
+        "lon":77.55472380034203
+    },
     
 ]
  
