@@ -79,6 +79,15 @@ h3 {
     letter-spacing: -0.2px;
 }
 
+#loader{
+    background: white url(https://i.pinimg.com/originals/25/d7/83/25d78319891c914ec8e9aec6e04dc4a2.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-size: 7%;
+}
+
 h4 {
     color: #272556;
     font-weight: 600;
