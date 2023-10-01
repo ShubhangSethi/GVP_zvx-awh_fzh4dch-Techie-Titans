@@ -43,6 +43,7 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbarExample">
+    <div id="loader"></div>
 
     <!-- Navigation -->
     <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
@@ -358,7 +359,12 @@
                     autoStart: false
                 });
             });
-        });
+        }); 
+        //loader//
+        var load = document.getElementById('loader');
+        window.addEventListener("load",function(){
+          load.style.display = 'none';
+        })
     </script>
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script src="https://mediafiles.botpress.cloud/d8614d1a-0407-4908-82c5-6cb5fbb3f1c4/webchat/config.js" defer></script>
