@@ -45,48 +45,19 @@
 <body data-bs-spy="scroll" data-bs-target="#navbarExample">
 
     <!-- Navigation -->
-    <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
-        <div class="container">
-
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html" style="text-decoration: none;"><img src="images/chatbot-logo.png" alt="alternative" style="width: 40px;"> E-Waste Manager</a>
-
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text" href="index.html">Ioniq</a> -->
-
-            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ms-auto navbar-nav-scroll">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#details">Details</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./rewards/rewards.html">Rewards</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="./Credit score/index.html">Merchant Platform</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="./datagraph/datagraph.html">Educational Content</a>
-                    </li>
-                                        
-                </ul>
-                <span class="nav-item">
-                        <a class="btn-outline-sm" href="log-in.html">Log in</a>
-                </span>
-            </div>
-            <!-- end of navbar-collapse -->
-        </div>
-        <!-- end of container -->
+    <nav>
+        <div class="logo"><h1><img src="images/chatbot-logo.png" > E-Waste Manager</h1></div>
+        <div class="open"><i class="fa fa-bars"></i></div>
+        <ul class="main">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="./rewards/rewards.html">Rewards</a></li>
+            <li><a href="./Credit score/index.html">Merchant Platform</a></li>
+            <li><a href="./datagraph/datagraph.html">Educational Content</a></li>
+            <li><a href="log-in.html">Login</a></li>
+            <div class="close"><i class="fa fa-times"></i></div>
+        </ul>
     </nav>
     <!-- end of navbar -->
     <!-- end of navigation -->
@@ -359,6 +330,32 @@
                 });
             });
         });
+        //loader//
+        var load = document.getElementById('loader');
+        window.addEventListener("load",function(){
+          load.style.display = 'none';
+        })
+        //nav//
+        const fox = document.querySelector('.main');
+        const gox = document.querySelector('.close');
+        const kox = document.querySelector('.open');
+        const rox = document.querySelectorAll('nav .main li a');
+
+       kox.addEventListener('click',show);
+       gox.addEventListener('click',close);
+       rox.forEach(item => {
+       item.addEventListener('click',function(){
+        close();
+      })
+    })
+
+     function show(){
+     fox.style.display = 'flex';
+     rox.style.top = '0';
+    }
+    function close(){
+    fox.style.top = '-100%';
+    }
     </script>
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script src="https://mediafiles.botpress.cloud/d8614d1a-0407-4908-82c5-6cb5fbb3f1c4/webchat/config.js" defer></script>
