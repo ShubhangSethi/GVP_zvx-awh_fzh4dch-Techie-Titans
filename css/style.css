@@ -377,134 +377,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-/*     Navigation     */
-
-
-/**********************/
-
-.navbar {
-    background-color: #fff2dc;
-    font-weight: 600;
-    font-size: 0.875rem;
-    line-height: 0.875rem;
-}
-
-.navbar .navbar-brand {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.navbar .logo-image img {
-    width: 132px;
-    height: 30px;
-}
-
-.navbar .logo-text {
-    color: #272556;
-    font-weight: 600;
-    font-size: 1.875rem;
-    line-height: 1rem;
-    text-decoration: none;
-}
-
-.offcanvas-collapse {
-    position: fixed;
-    top: 3.25rem;
-    /* adjusts the height between the top of the page and the offcanvas menu */
-    bottom: 0;
-    left: 100%;
-    width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    overflow-y: auto;
-    visibility: hidden;
-    background-color: #fff2dc;
-    transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
-    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
-    transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
-}
-
-.offcanvas-collapse.open {
-    visibility: visible;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-}
-
-.navbar .navbar-nav {
-    margin-top: 0.75rem;
-    margin-bottom: 0.5rem;
-}
-
-.navbar .nav-item .nav-link {
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
-    color: #272556;
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
-
-.navbar .nav-item.dropdown.show .nav-link,
-.navbar .nav-item .nav-link:hover,
-.navbar .nav-item .nav-link.active {
-    color: #f25c05;
-}
-
-
-/* Dropdown Menu */
-
-.navbar .dropdown .dropdown-menu {
-    animation: fadeDropdown 0.2s;
-    /* required for the fade animation */
-}
-
-@keyframes fadeDropdown {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.navbar .dropdown-menu {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-    border: none;
-    background-color: #fff2dc;
-}
-
-.navbar .dropdown-item {
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
-    color: #272556;
-    font-weight: 600;
-    font-size: 0.875rem;
-    line-height: 0.875rem;
-    text-decoration: none;
-}
-
-.navbar .dropdown-item:hover {
-    background-color: #fff2dc;
-    color: #f25c05;
-}
-
-.navbar .dropdown-divider {
-    width: 100%;
-    height: 1px;
-    margin: 0.5rem auto 0.5rem auto;
-    border: none;
-    background-color: #d1d1d1;
-}
-
-
-/* end of dropdown menu */
-
-.navbar .navbar-toggler {
-    padding: 0;
-    border: none;
-    font-size: 1.25rem;
-}
-
 
 /*-------------------Regsiter-html--------------------*/
 
@@ -607,6 +479,7 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 9rem;
     background-color: #fff2dc;
     text-align: center;
+    margin-top:-20px;
 }
 
 .header .h1-large {
@@ -1339,58 +1212,7 @@ body::-webkit-scrollbar-thumb {
         margin-left: auto;
     }
     /* end of general styles */
-    /* Navigation */
-    .navbar {
-        padding-top: 1.75rem;
-        background-color: transparent;
-        box-shadow: none;
-        transition: all 0.2s;
-    }
-    .navbar.extra-page {
-        padding-top: 0.5rem;
-    }
-    .navbar.top-nav-collapse {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        background-color: #fff2dc;
-    }
-    .offcanvas-collapse {
-        position: static;
-        top: auto;
-        bottom: auto;
-        left: auto;
-        width: auto;
-        padding-right: 0;
-        padding-left: 0;
-        background-color: transparent;
-        overflow-y: visible;
-        visibility: visible;
-    }
-    .offcanvas-collapse.open {
-        -webkit-transform: none;
-        transform: none;
-    }
-    .navbar .navbar-nav {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .navbar .nav-item .nav-link {
-        padding-right: 0.75rem;
-        padding-left: 0.75rem;
-    }
-    .navbar .dropdown-menu {
-        padding-top: 0.75rem;
-        padding-bottom: 0.75rem;
-        box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.08);
-    }
-    .navbar .dropdown-divider {
-        width: 90%;
-    }
-    .navbar .nav-item .btn-outline-sm {
-        margin-top: 0;
-        margin-left: 0.625rem;
-    }
-    /* end of navigation */
+    
     /* Header */
     .header {
         padding-top: 12rem;
@@ -2181,6 +2003,97 @@ td {
     border-radius: 15px;
     width: 250px;
 }
+/*-----navigation-----*/
+.gox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 12px 20px;
+    background-color: #fff2dc;
+    height: 80px;
 
+}
+.logo img {width: 40px;}
+.menu {display: flex;}
+.menu li {padding-left: 30px;}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color:#272556;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+    
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+.open , .close {
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    
+}
+.close {
+    top: 20px;
+    right: 20px;
+    
+}
+#check {display: none;}
+@media(max-width: 610px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #fff2dc;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open , .close {display: block;}
+    #check:checked ~ .menu {right: 0;}
+}
+a:hover{
+    background-color: orange;
+    padding: 12px 20px;
+}
+.hox{
+    text-decoration: none;
+    color: #272556;
+    font-size: 40px;
+}
+.hox:hover{
+    background-color: none;
+}
+.lox{
+    font-size: 30px;
+}
+
+/*-----End Of Navigation-----*/
 
 /*-------------Business Detail Html ends---------------------------*/
