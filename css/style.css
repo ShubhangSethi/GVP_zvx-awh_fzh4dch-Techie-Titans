@@ -2092,8 +2092,13 @@ a:hover{
 }
 .lox{
     font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
 }
-
+.VIpgJd-ZVi9od-l4eHX-hSRGPd:hover{
+    background:none;
+}
 /*-----End Of Navigation-----*/
 
 /*-------------Business Detail Html ends---------------------------*/
