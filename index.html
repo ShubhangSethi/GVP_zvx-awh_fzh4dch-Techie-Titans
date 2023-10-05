@@ -59,6 +59,7 @@
                 <li><a href="./Credit score/index.html">Merchant Platform</a></li>
                 <li><a href="./datagraph/datagraph.html">Educational Content</a></li>
                 <li><a href="log-in.html">Login</a></li>
+                <li><div id="google_translate_element"></div></li>
                 <label for="check" class="close"><i class="fas fa-times"></i></label>
             </span>
             <label for="check" class="open"><i class="fas fa-bars"></i></label>
@@ -355,6 +356,12 @@
           load.style.display = 'none';
         })
     </script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.Vertical}, 'google_translate_element');
+        }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script src="https://mediafiles.botpress.cloud/d8614d1a-0407-4908-82c5-6cb5fbb3f1c4/webchat/config.js" defer></script>
 </body>
