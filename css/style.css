@@ -2078,10 +2078,6 @@ td {
     .open , .close {display: block;}
     #check:checked ~ .menu {right: 0;}
 }
-a:hover{
-    background-color: orange;
-    padding: 12px 20px;
-}
 .hox{
     text-decoration: none;
     color: #272556;
