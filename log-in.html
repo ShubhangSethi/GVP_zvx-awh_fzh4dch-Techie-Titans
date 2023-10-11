@@ -1,275 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <title>Login</title>
+  <style>
+    body{
+      background-color: #F3EBF6;
+    }
+    .first{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 120px;
+      font-family: "Audiowide", sans-serif;
+      margin-left: -20px;
+    } 
+    form{
+      width: 300px;
+      height: 40px;
+      margin: auto;
+      position: relative;
+      margin-top: 30px;
+    }
+    form input{
+      width: 100%;
+      height: 100%;
+      background: rgba(99, 91, 91, 0.04);
+      border: 2px solid rgba(32, 31, 31, 0.02);
+      color: rgb(38, 50, 56);
+      border-radius: 30px;
+      outline: none;
+      text-align: center;
+      font-size: 18px;
+      font-family: "Audiowide", sans-serif;
+    }
+    form label{
+      position: absolute;
+      top: 15px;
+      left: 35px;
+      font-size: 15px;
+      font-family: "Audiowide", sans-serif;
+    }
+    form input:focus ~ label{
+      top: -9px;
+      background: #F3EBF6;
+      transition: .4s;
+    }
+    .last,.extra{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .last, .media a{
+      margin-left: -150px;
+      margin-top: 50px;
+      color: #9036a0;
+      font-family: "Audiowide", sans-serif;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+    button{
+      margin-left: 220px;
+      margin-top: -28px;
+      cursor: pointer;
+      border: none;
+      background: linear-gradient(to right, #9C27B0, #E040FB);
+      padding: 12px 20px;
+      color: white;
+      border-radius: 8px;
+      font-family: "Audiowide", sans-serif;
+    }
+    .hund{
+      border-top: 1px solid grey;
+      top: 20px;
+      position: relative;
+      width: 300px;
+      max-width: 300px;
+      margin: auto;
+    }
+    .yox p{
+      text-align: center;
+      top: 10px;
+      background-color:rgb(247, 242, 242);
+      width: 18px;
+      position: relative;
+      max-width: 18px;
+      margin: auto;
+      border-radius: 50%;
+    }
+    .media{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -30px;
+    }
+    .fac{
+        width: 60px;
+        height: 60px;
+        margin-left: 170px;
+    }
+    .google{
+      width: 60px;
+      height: 60px;
+      margin-left: 150px;
+    }
+    .signup{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 40px;
+      font-family: "Audiowide", sans-serif;
+    }
+    .signup a{
+      margin-top: 10px;
+      font-family: "Audiowide", sans-serif;
+      color: #8C55AA;
+    }
+    span{
+      color: #8C55AA;
+    }
+  </style>
 </head>
 <body>
-    
-    <div class="form">
-        <form class="form-horizontal signin">
-            <div class="form-wrap" style="position: relative;">
-              <h2>Login</h2>
-              <div class="form-group">
-                  <!-- <label for="email">Username:</label> -->
-                  <div class="relative">
-                      <input class="form-control" id="name" type="text" required="" autofocus="" title="" autocomplete="" placeholder="Username">
-                      <i class="fa fa-user"></i>
-                  </div>
-              </div>
-              
-              <div class="form-group">
-                  <!-- <label for="email">Password:</label> -->
-                  <div class="relative">
-                      <input class="form-control" type="password" required="" placeholder="Password">
-                      <i class="fa fa-key"></i>
-                  </div>
-                  <span class="pull-right"><small><a href="#">Forgot Password?</a></small></span>
-              </div> 
-                              
-              <div class="login-btn">
-                  <a href="./profile-wallet/index.html">Login <i class="fa fa-fw fa-lock"></i></a>
-                  <div class="relative"><hr><span class="login-text">or login with</span></div>
-                  <div class="clearfix"></div>
-                  <div class="social-btn clearfix">
-                      <a href="#"><button class="movebtn google" type="Submit">Google <i class="fa fa-fw fa-google"></i></button></a>
-                      <a href="#"><button class="movebtn facebook" type="Submit">Facebook <i class="fa fa-fw fa-facebook"></i></button></a>
-                  </div>
-              </div>
-              
-            </div>
-            <div class="sign-up">
-              <a href="./sign-up.html" class="signbtn"><small>Not a member? Sign Up <i>(Click me)</i></small></a>
-          </div>
-        </form>
+  <div class="sls">
+   <div class="first">
+     <img src="chatbot-logo.png">
+     <h2>E-WASTE MANAGER</h2>
+   </div>
+   <form action="#">
+      <input type="text" required id="1">
+      <label for="1">Username</label>
+   </form>
+   <form action="" class="pox">
+      <input type="password"  required id="2">
+      <label for="2">Password</label>
+   </form>
+    <div class="last">
+      <a href="#">Forgot Password?</a>
     </div>
-    <script>
-        		$(".signup").css("display", "none");
-
-$(".signbtn").click(function(){
-    $("form").animate({ height:"toggle", opacity: "toggle"}, "slow");
-});
-
-$("#showhide").click(function(){
-var pass = $("#myinput");
-if (pass.attr("type") == "password") {
-pass.attr("type", "text");
-} else {
-pass.attr("type", "password");
-}
-})
-    </script>
+    <div class="extra">
+      <button>Sign In</button>
+    </div>
+    <div class="hund"></div>
+    <div class="yox">
+      <p>Or</p>
+    </div>
+    <div class="media">
+      <a href="#"><img class="google" src="https://img.icons8.com/3d-fluency/94/google-logo.png" alt="google-logo"/></a>
+      <a href="#"><img class="fac" src="https://img.icons8.com/3d-fluency/94/facebook-circled.png" alt="facebook-circled"></a>
+    </div>
+    <div class="signup">
+      <span>Or Sign Up Using</span>
+      <a href="./sign-up.html">SIGN UP</a>
+    </div>
+  </div>
+  <script>
+     function sign(){
+        location.href = './profile-wallet/index.html';
+     }
+     document.addEventListener("DOMContentLoaded",function(){
+      document.querySelector('button').onclick = sign;
+     })
+  </script>
 </body>
-
-<style>
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
-
-html{
-    height: 100%;
-}
-body {
-    background: #151515;  /* fallback for old browsers */
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f8f8f8;
-    background-size: 20px 20px;
-    font-size: 14px;
-    background: rgba(63,60,79,1);
-    background: -moz-linear-gradient(top, rgba(63,60,79,1) 0%, rgba(60,59,77,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(63,60,79,1)), color-stop(100%, rgba(60,59,77,1)));
-    background: -webkit-linear-gradient(top, rgba(63,60,79,1) 0%, rgba(60,59,77,1) 100%);
-    background: -o-linear-gradient(top, rgba(63,60,79,1) 0%, rgba(60,59,77,1) 100%);
-    background: -ms-linear-gradient(top, rgba(63,60,79,1) 0%, rgba(60,59,77,1) 100%);
-    background: linear-gradient(to bottom, rgba(63,60,79,1) 0%, rgba(60,59,77,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3c4f', endColorstr='#3c3b4d', GradientType=0 );
-}
-a{
-    color: #3c3b4d;
-}
-a:hover{
-    text-decoration: none;
-}
-.form {
-    max-width: calc(100vw - 40px);
-    width: 420px;
-    height: auto;
-    background: rgba(255, 255, 255, 1);
-    padding: 30px;
-    box-sizing: border-box;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-.form:before{
-    content: "";
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-.form h2 {
-    margin: 0;
-    padding-bottom: 10px;
-    color: #1e439b;
-    font-size: 22px;
-    border-bottom: 3px solid #ff5501;
-    font-weight: 600;
-    margin-bottom: 40px;
-    text-align: center;
-}
-label{
-    text-transform: uppercase;
-    font-weight: 700;
-}
-input {
-    width: 60%;
-    padding: 10px;
-    box-sizing: border-box;
-    background: none;
-    outline: none;
-    resize: none;
-    border: 0;
-    font-family: 'Montserrat', sans-serif;
-    border: 2px solid #bebed2;
-}
-.form p:before {
-    content: attr(type);
-    display: block;
-    margin: 10px 0 0;
-    font-size: 13px;
-    color: #5a5a5a;
-    float: left;
-    width: 40%;
-}
-button {
-    padding: 8px 12px;
-    margin: 4px 0;
-    font-family: 'Montserrat', sans-serif;
-    border: 2px solid #78788c;
-    background: 0;
-    color: #5a5a6e;
-    cursor: pointer;
-    transition: all .3s;
-}
-button:hover {
-    background: #646171;
-    color: #fff;
-    border-color: #646171;
-    box-shadow: 0px 0 5px 0 #646171;
-}
-.login-btn{margin-top: 50px;}
-
-.relative{
-    position: relative;
-}
-.relative i.fa{
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 30px;
-    color: #9b9aa3;
-    text-align: center;
-    border-radius: 0 4px 4px 0;
-    transition: all 0.15s ease-in-out;
-}
-input:focus + .fa{
-    color: #3e3b4e;
-    transform: rotate(360deg);
-}
-.form-group{
-    margin-bottom: 20px;
-}
-.form-control{
-    font-size: 14px;
-    padding-left: 40px;
-    border: none;
-    border-bottom: 1px solid #3c3b4d;
-    border-radius: 0;
-    background-color: transparent;
-}
-.form-control:focus{
-    border-color: #1e439b;
-    box-shadow: inset 0 0px 0px rgba(0,0,0,.075), 0 3px 4px -3px rgb(30, 102, 195);
-    background-color: transparent;
-}
-.sign-up{
-    margin-top: 30px;
-    text-align: center;
-    position: relative;
-    margin-bottom: -15px;
-}
-.login-text{
-    position: absolute;
-    top: -11px;
-    text-align: center;
-    width: 30%;
-    background-color: #fff;
-    left: 50%;
-    transform: translateX(-50%);
-}
-hr{
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.4);
-}
-/* --- Animated Buttons --- */
-.movebtn{
-    background-color: transparent;
-    display:inline-block;
-    width:100%;
-    background-image: none;
-    padding: 8px 10px;
-    border-radius: 0;
-}
-.movebtnre {
-    border: 2px solid #ff5501;
-    box-shadow: inset 0 0 0 0 #ff5501;
-    color:#ff5501;
-}
-.movebtnsu {
-    border: 2px solid #3e3b4e;
-    color: #ffffff;
-    background-color: #3e3b4e;
-}
-.google, .facebook{
-    width: 50%;
-    float: left;
-}
-.google {
-    border: 2px solid #e04c40;
-    color: #ffffff;
-    background-color: #e04c40;
-}
-.facebook {
-    border: 2px solid #2e4da7;
-    color: #ffffff;
-    background-color: #2e4da7;
-}
-.google:focus,
-.google:hover,
-.google:active {
-    background-color: #ea3728;
-    color: #FFF;
-    border-color: #ea3728;
-    box-shadow: none;
-}
-.facebook:focus,
-.facebook:hover,
-.facebook:active {
-    background-color: #1e439b;
-    color: #FFF;
-    border-color: #1e439b;
-    box-shadow: none;
-}
-
-</style>
 </html>
