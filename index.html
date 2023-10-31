@@ -58,7 +58,7 @@
                 <li><a href="./rewards/rewards.html">Rewards</a></li>
                 <li><a href="./Credit score/index.html">Merchant Platform</a></li>
                 <li><a href="./datagraph/datagraph.html">Educational Content</a></li>
-                <li><a href="https://e-wastemanager.000webhostapp.com/login-in.php">Login</a></li>
+                <li><a href="https://e-wastemanager.000webhostapp.com/login-in.php" id="link">Login</a></li>
                 <li><div id="google_translate_element"></div></li>
                 <label for="check" class="close"><i class="fas fa-times"></i></label>
             </span>
@@ -346,6 +346,17 @@
         window.addEventListener("load",function(){
           load.style.display = 'none';
         })
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('loggedin')) {
+            const loggedIn = urlParams.get('loggedin');
+            if (loggedIn === 'true') {
+                const username = urlParams.get('username');
+                if (username) {
+                    document.getElementById('link').textContent = decodeURIComponent(username) ;
+                    link.href = 'https://e-wastemanager.000webhostapp.com/logout.html'
+                }
+            }
+        }
     </script>
     <script type="text/javascript">
         function googleTranslateElementInit() {
