@@ -47,29 +47,79 @@
     <div id="loader"></div>
 
     <!-- Navigation -->
-      <nav>
-        <ul class='gox'>
-            <li class="lox"><img src='images/chatbot-logo.png'/>E-Waste Manager</li>
-            <input type='checkbox' id='check' />
-            <span class="menu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#details">Details</a></li>
-                <li><a href="./rewards/rewards.html">Rewards</a></li>
-                <li><a href="./Credit score/index.html">Merchant Platform</a></li>
-                <li><a href="./datagraph/datagraph.html">Educational Content</a></li>
-                <li><a href="https://e-wastemanager.000webhostapp.com/login-in.php" id="link">Login</a></li>
-                <li><div id="google_translate_element"></div></li>
-                <label for="check" class="close"><i class="fas fa-times"></i></label>
-            </span>
-            <label for="check" class="open"><i class="fas fa-bars"></i></label>
-        </ul>
-    </nav>
-
-                <!-- Google Translate -->
-                
-            <!-- end of navbar-collapse -->
-        
+      <header class="rrr">
+        <div class="container-fluid">
+            <div class="navb-logo">
+                <img src="chatbot-logo.png" alt="Logo">
+            </div>
+            <div class="navb-items d-none d-xl-flex">
+                <div class="item">
+                    <a href="#header" data-text="Home">Home</a>
+                </div>
+                <div class="item">
+                    <a href="#features" data-text="Features">Features</a>
+                </div>
+                <div class="item">
+                    <a href="#details" data-text="Details">Details</a>
+                </div>
+                <div class="item">
+                    <a href="./rewards/rewards.html" data-text="Rewards">Rewards</a>
+                </div>
+                <div class="item">
+                    <a href="./Credit score/index.html" data-text="Merchant Platform">Merchant Platform</a>
+                </div>
+                <div class="item">
+                    <a href="./datagraph/datagraph.html" data-text="Educational Content">Educational Content</a>
+                </div>
+                <div class="item-button">
+                    <a href="https://e-wastemanager.000webhostapp.com/login-in.php" type="button" id="link">Login</a>
+                </div>
+            </div>
+            <div class="mobile-toggler d-lg-none">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="chatbot-logo.png" alt="Logo">E-WASTE MANAGER
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <div class="modal-body">  
+                            <div class="modal-line">
+                                <a href="#header" data-text="Home">Home</a>
+                            </div>
+                            <div class="modal-line">
+                                <a href="#features" data-text="Features">Features</a>
+                            </div>
+                            <div class="modal-line">
+                                <a href="#details" data-text="Details">Details</a>
+                            </div>
+                            <div class="modal-line">
+                                <a href="./rewards/rewards.html" data-text="Rewards">Rewards</a>
+                            </div>
+                            <div class="modal-line">
+                                <a href="./Credit score/index.html" data-text="Merchant Platform">Merchant Platform</a>
+                            </div>
+                            <div class="modal-line">
+                                <a href="./datagraph/datagraph.html" data-text="Educational Content">Educational Content</a>
+                            </div>
+                            <a href="https://e-wastemanager.000webhostapp.com/login-in.php" class="navb-button" type="button" id="lock">Login</a>
+                        </div>
+                        <div class="mobile-modal-footer">
+                            <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a target="_blank" href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- end of navbar -->
     <!-- end of navigation -->
 
@@ -352,8 +402,10 @@
             if (loggedIn === 'true') {
                 const username = urlParams.get('username');
                 if (username) {
-                    document.getElementById('link').textContent = decodeURIComponent(username) ;
+                    document.getElementById('link').textContent = decodeURIComponent(username);
+                    document.getElementById('lock').textContent = decodeURIComponent(username);
                     link.href = 'https://e-wastemanager.000webhostapp.com/logout.html'
+                    lock.href = 'https://e-wastemanager.000webhostapp.com/logout.html'
                 }
             }
         }
