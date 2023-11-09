@@ -2117,6 +2117,8 @@ a:hover{
     font-size: 30px;
 }
 
+
+
 .modal-dialog{
 
     margin: 0;
@@ -2130,6 +2132,7 @@ a:hover{
         width: 82%;
     }
 }
+
 .modal-content{
 
     border-radius: 0;
