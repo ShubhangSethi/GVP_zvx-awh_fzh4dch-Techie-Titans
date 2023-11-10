@@ -2298,5 +2298,171 @@ a:hover{
     }
 }
 /*-----End Of Navigation-----*/
-
+/*-----Skeleton-----*/
+.skeleton{
+    position: relative;
+}
+.skeleton::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: linear-gradient(90deg,
+      rgba(#fff, 0) 0,
+      rgba(#fff, 0.2) 20%,
+      rgba(#fff, 0.5) 60%,
+      rgba(#fff, 0));
+    border: 4px solid #4A474A;
+    background-color: #2F3651;
+    background-size: 200%;
+    animation: namaskar 1s ease-in-out forwards infinite;
+    animation-direction: alternate;
+}
+.ske-nav{
+    position: relative;
+    margin: 10px;
+}
+.ske-nav::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: #DDDBDD;
+    border-radius: 10px;
+    animation: namaskar 1s ease-in-out forwards infinite;
+    animation-direction: alternate;
+}
+.ske-img{
+    position: relative;
+}
+.ske-img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: #DDDBDD;
+    border-radius: 10px;
+    animation: namaskar 1s ease-in-out forwards infinite;
+    animation-direction: alternate;
+}
+.ske-txt{
+    position: relative;
+}
+.ske-txt::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: #E1E1E1;
+    border-radius: 10px;
+    animation: namaskar 1s ease-in-out forwards infinite;
+    animation-direction: alternate;
+}
+.ske-btn{
+    position: relative;
+}
+.ske-btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: #E1E1E1;
+    border-radius: 10px;
+    animation: namaskar 1s ease-in-out forwards infinite;
+    animation-direction: alternate;
+}
+.ske-hd{
+    position: relative;
+}
+.ske-hd::before{
+    content: '';
+    position: absolute;
+    margin-top: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: #2F3651;
+    border: 4px solid #4A474A;
+    animation: namaskar 1s ease-in-out forwards infinite;
+    animation-direction: alternate;
+}
+@keyframes namaskar{
+    0%{
+        background-position: -100% 0;
+    }
+    100%{
+        background-position: 100% 0;
+    }
+}
+.ske-sec{
+    position: relative;
+}
+.ske-sec::before{
+    content: '';
+    position: absolute;
+    margin-top: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    margin-top: -10px;
+    background-color: #2F3651;
+    border: 4px solid #4A474A;
+    animation: namaskar 1s ease-in-out forwards infinite;
+    animation-direction: alternate;
+}
+.ske-icon{
+    position: relative;
+}
+.ske-icon::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 35px;
+    z-index: 10;
+    background-color: #DDDBDD;
+    border-radius: 10px;
+    animation: namaskar 1s ease-in-out forwards infinite;
+    animation-direction: alternate;
+}
+.ske-copy{
+    position: relative;
+}
+.ske-copy::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: -10px;
+    z-index: 10;
+    background-color: #DDDBDD;
+    border-radius: 10px;
+    animation: namaskar 1s ease-in-out forwards infinite;
+    animation-direction: alternate;
+}
+/*-----End Of Skeleton-----*/
 /*-------------Business Detail Html ends---------------------------*/
