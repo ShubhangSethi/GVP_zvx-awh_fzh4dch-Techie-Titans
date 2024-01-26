@@ -1,6 +1,6 @@
-# SIH-2023-Techie-Titans
-## We are creating a webite for e-waste management.
-[https://shubhangsethi.github.io/SIH-2023-Techie-Titans/](https://shubhangsethi.github.io/GVP_zvx-awh_fzh4dch-Techie-Titans/)
+### '#SIH-2023-Techie-Titans'
+# Green_Chips- An E-Waste Manager
+## This is the website for e-waste management.
 
 This is the project for building a website which can help people to simplify the process of e-waste disposal.
 The main aim of this project was to build an interactive and user friendly website using HTML, CSS & JavaScript and to eliminate middle man from the disposal System. 
